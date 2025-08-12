@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>واریز تتر</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>واریز تتر</h1>
+
+    <div id="tether-price">قیمت لحظه‌ای تتر: در حال دریافت...</div>
+
+    <form id="deposit-form">
+      <label for="amount">مقدار تتر برای واریز (حداقل 100 تتر):</label>
+      <input type="number" id="amount" name="amount" min="100" required>
+
+      <p>آدرس کیف پول تتر TRC20 شما:</p>
+      <!-- آدرس کیف پول تتر شما -->
+      <input type="text" id="wallet-address" value="TTWZDcCNgxhDN8U2GX4KV5geyq1ZURViGB" disabled>
+
+      <button type="submit">واریز تتر</button>
+    </form>
+
+    <div id="error-message" style="color: red; display: none;">
+      لطفاً مبلغ واریزی حداقل 100 تتر باشد.
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
